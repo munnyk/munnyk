@@ -1,0 +1,93 @@
+#define _CRT_SECURE_NO_WARNINGS 1	
+#include<stdio.h>
+#include<stdlib.h>
+
+//0.问题目录：
+//1.无法打开监视
+//2.第10处无法引用函数
+//3.第13无法引用外部函数
+// 
+//
+
+
+
+//1.打印
+
+//int main()
+//{
+//	printf("hello world\n");
+//	printf("hello world\n");
+//	printf("hello world\n");
+//	char ch = 'a';
+//	printf("%c\n", ch);
+//	int age = 20;
+//	printf("%d\n", age);
+//	float ccc = 5;
+//	printf("%f\n", ccc);
+//
+//	double d = 5;
+//	printf("%lf\n", d);
+//
+//	printf("%d\n", sizeof(int));
+//	printf("%d\n", sizeof(int));
+//	float weight = 89.9f;
+//	printf("%f\n", weight);
+//	return 0;
+//
+//}
+
+//2，取地址
+
+//
+//
+//int main()
+//{
+//	int num1=0;
+//	int num2 = 0; 
+//	
+//	scanf("%d%d", &num1, &num2);  //取地址，需要两个变量存取值
+//	int sum = 0;
+//		sum = num1 + num2;
+//	printf("s=%d\n", sum);
+//
+//
+//
+//
+//	return 0;
+//}
+
+
+
+
+//3.全局变量与局部变量
+
+
+//int global = 2022;
+//void test()
+//{
+//	extern int s;      //声明外部变量
+//	printf("text()--=%d\n", global);
+//	printf("text()--=%d\n", s);
+//
+//
+//	return 0;
+//
+//}
+//
+//
+//int main()
+//{
+//	test();
+//	int num = 0;
+//	{
+//		/*{int num = 0; }*/
+//		/*int num = 0;*/
+//		printf("num=%d\n", global);
+//		return 0;
+//
+//
+//
+//
+//
+//	}
+//}
