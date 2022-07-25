@@ -347,4 +347,148 @@
 //
 //	return 0;
 //}
+//13.作业及复习1
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	scanf("%d%d", &a, &b);
+//	if (a > b)
+//		printf("较大值是：%d", a);
+//	else
+//		printf("较大值是：%d", b);
+//
+//
+//
+//
+//	return 0;
+//}
+
+// int Max(int a, int b) {
+//	 if (a > b)
+//		 return a;
+//	 else
+//		 return b  ;
+//
+//
+//}
+//
+//
+//int main()
+//{
+//	int a = 44;
+//	int b = 6;
+//	int Max = 0;
+//	Max = Max(a, b);
+//	printf("%d", Max);
+//
+//
+//
+//	return 0;
+//}
+//
+
+//14.操作符2
+//int main()
+//{
+//	int a = 10;
+//		int arr[] = { 1,2,3,4,5,6 };
+//		printf("%d\n", sizeof(a)); //4
+//		printf("%d\n", sizeof(int)); //4
+//		printf("%d\n", sizeof a);  //说明sizeof是操作符 
+//		printf("%d\n", sizeof (arr));//计算数组大小，单位bit 字节
+//		//printf("%d\n", sizeof int);//这样写不行
+//		printf("%d\n", sizeof(arr)/sizeof(arr[0]));//计算数组元素个数
+//
+//		int b = 0;
+//			int c = ~b;
+//			//    ~    按位取反
+//			//000000000000000000000000000000
+//			//111111111111111111111111111111
+//			//源码，反码，补码 源码变反码按位取反（第一位符号位不变），反码加一得补码
+//			//负数
+//			printf("%d\n", c);//使用的，打印的是源码
+//			int d = 10;
+//			int e = d++; //后置++,先赋值给e，再++
+//			printf("d=%d e=%d\n ", d, e);
+//			int f = ++d;
+//			printf("d=%d f=%d\n ", d, f);//前置
+//
+//			int h= 3.14;   //warning
+//			int g = (int)3.14; //强制类型转换
+//			printf("h=%d g=%d\n ", h, g);
+//
+//			//!=用于判断不相等
+//			//0表示假，非0表示真
+//			// && 逻辑与（且）
+//			// ||逻辑或
+//			
+//			int i = 2;
+//			int j = 3;
+//			int k = i && j;
+//			printf("%d\n", k);
+//			int max = 0;
+//			max = (i > j ? i :j);
+//			printf("%d\n", max);
+//
+//			int arr2[10] = { 0 };
+//			
+//			printf("%d\n",arr2[4] );//arr[4] //[]下标操作符
+//			//()函数调用操作符
+//			//
+//
+//	return 0;
+//}
+
+//15.关键字
+
+//声明外部函数
+//extern int add(int, int);
+//
+//void test()
+//{
+//	int c = 1;
+//	c++;
+//	printf("c========%d\n", c);
+//	
+//	static int b = 1;
+//	b++;
+//	printf("b========%d\n", b);
+//	
+//}
+//
+//
+//
+//int main()
+//
+//{
+//	int a = 10;//auto 自动变量 
+//	//break case char const continue default do double else enum exturn float for goto if long int register return short sizeof static struct switch typedef
+//	// union void volatile while
+//	//register int a=10 建议把a定义成寄存器变量
+//	//signed int ,unsigned int(无符号数）
+//	//typedef 类型定义 e：
+//	
+//	typedef unsigned int u_int;
+//		u_int b = 10;
+//		int i = 0;
+//		while (i < 5)
+//		{test();
+//		printf("i=%d\n", i);
+//		i++; 
+//		printf("i=%d\n", i);
+//}
+//
+//
+//		extern int yy;
+//		printf("yy=%d\n", yy);
+//		//static 修饰局部变量 局部变量生命周期变长
+//		//static 修饰全局变量 改变了该全局变量的作用域，只能在源文件内部使用
+//		//static 修饰函数，使函数失去外部连接属性
+//		int sum = add(yy, b);
+//		printf("sum=%d\n", sum);
+//
+//	return  0;
+//}
+//
 
