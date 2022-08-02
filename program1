@@ -1009,3 +1009,59 @@
 //
 //	return 0;
 //}
+//int main()
+//{
+//	int year = 1000,i=0;
+//	for (; year < 2001; year++)
+//	{
+//		if (year % 4 == 0 && year % 100 != 0|| (year % 400 == 0)) {
+//			printf("%d ", year);
+//			i++;
+//		}
+//		
+//
+//	}
+//	printf("\n%d", i);
+//
+//	return 0;
+//
+//}
+//int main()
+//{
+//	int i = 100,k=1;
+//	for(;i<201;i++)
+//	{
+//		for (k = 2; k <= i; k++) {
+//			if ((i % k == 0) && (k< i))
+//			
+//				break;
+//			if(i%k==0&&i==k)
+//			{
+//				printf("%d ", i);
+//			}
+//
+//		}
+//	}
+//
+//	return 0;
+//}
+//int main()        //优化调整试除法的范围
+//{
+//	int i = 100, k = 1;
+//	for (i=101; i < 201; i+=2)
+//	{
+//		for (k = 2; k <= i; k++) {
+//			if ((i % k == 0) && (k < i))
+//
+//				break;
+//			if (k>sqrt(i))
+//			{
+//				printf("%d ", i);
+//				break;
+//			}
+//
+//		}
+//	}
+//
+//	return 0;
+//}
