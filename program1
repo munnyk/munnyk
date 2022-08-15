@@ -2,8 +2,8 @@
 #define _CRT_SECURE_NO_WARNINGS 1	
 #include<stdio.h>
 #include<time.h>
-#include<stdlib.h>
-#include<string.h>
+#include<stdlib.h>//system
+#include<string.h>//字符串操作函数
 #include<windows.h>//Sleep
 #include<stdlib.h>//system
 #include<math.h>//数学
@@ -1321,17 +1321,125 @@
 //
 //	return 0;
 //}
+//int main() {
+//	char input[20] = { 0 };
+//	//shutdown -s -t 60
+//	system("shutdown -s -t 60");
+//	again:
+//	printf("请注意，电脑即将关机，输入：123 则取消关机\n");
+//	scanf("%s", input);
+//	if (strcmp(input, "123") == 0) {
+//		system("shutdown -a");
+//	}
+//	else {
+//		goto again;
+//	}
+//
+//
+//	return 0;
+//}
+//8.15
+//Add(int x, int y)
+//{
+//	int z = 0;
+//	z = x + y;
+//	return z;
+//}
+//int main()
+//{
+//	int a = 1;
+//	int b = 20;
+//	int sum = Add(a, b);
+//    printf("%d\n", sum);
+//
+//	return 0;
+//}
+//int main()
+//{
+//	char arr1[] = "bit ";
+//	char arr2[] = "dfghiseu";
+//	strcpy(arr2, arr1);
+//	printf("%s", arr2);
+//
+//	return 0;
+//}
+//int main()
+//{
+//
+//	char arr[] = "hello world";
+//	memset(arr, '*', 5);
+//	printf("%s", arr);
+//
+//	return 0;
+//}
+//int Max(int x, int y) {
+//	if (x > y)
+//		return x;
+//	else
+//		return y;
+//	
+//}
+//int main() {
+//	int a = 10;
+//	int b = 20;
+//	int c = Max(a, b);
+//	printf("%d", c);
+//
+//	return 0;
+//}
+//void Swap1(int x, int y) {
+//	int tmp = 0;
+//	tmp = x;
+//	x = y;
+//	y = tmp;
+//}
+//
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//
+//	Swap1(a, b);
+//	printf("%d %d",a,b);
+//
+//	return 0;
+//}
+//int main()
+//{
+//	int a = 1;
+//	int* pa = &a;
+//	*pa = 29;
+//	a = *pa;     //*pa解引用，找到pa的内容
+//	printf("%d", a);
+//	return 0;
+//}
+//int main() {
+//	int a = 10;
+//	int b = 20;
+//	int c = Max(a, b);
+//	printf("%d", c);
+//
+//	return 0;
+//}
+//void Swap1(int* x, int* y) {
+//
+//	int tmp = 0;
+//	tmp = *x;
+//	*x = *y;
+//	*y = tmp;
+//}
+//
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//
+//	Swap1(&a, &b);
+//	printf("%d %d",a,b);
+//
+//	return 0;
+//}
 int main() {
-	char input[20] = { 0 };
-	//shutdown -s -t 60
-	//system(shutdown -s -t 60);
-	printf("请注意，电脑即将关机，输入：123 则取消关机\n");
-	scanf("%s", input);
-	if (strcmp(input, "123") == 0) {
-
-	}
-
-
 
 	return 0;
 }
