@@ -1493,12 +1493,32 @@
 //			return 1;
 //		
 //	}
-
-int main()
-{
-	int arr[] = { 1,2,3,4,5,6,7,8,9,100 };
-
-
-
-	return 0;
-}
+//8.18
+//int binary_search(char arr[], int k)
+//{
+//	int left = 0;
+//	int right = sizeof(arr) /sizeof( arr[0])-1;
+//	for (; right > left;) {
+//
+//		if (k > arr[(left + right) / 2])
+//			left = (left + right) / 2;
+//		else
+//			right = (left + right) / 2;
+//	}
+//	return left;
+//}
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int k = 7;
+//	
+//	int ret=	binary_search(arr,k);
+//	if (ret = -1) {
+//		printf("找不到");
+//	}
+//	else {
+//		printf("找到了，下标是：%d", ret);
+//	}
+//
+//	return 0;
+//}
