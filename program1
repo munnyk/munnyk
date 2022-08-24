@@ -1494,26 +1494,45 @@
 //		
 //	}
 //8.18
-//int binary_search(char arr[], int k)
+//int binary_search(int arr[], int k,int right) //arr本质是指针
 //{
 //	int left = 0;
-//	int right = sizeof(arr) /sizeof( arr[0])-1;
-//	for (; right > left;) {
+//
+//	for (; right > left+1;) {
 //
 //		if (k > arr[(left + right) / 2])
-//			left = (left + right) / 2;
-//		else
-//			right = (left + right) / 2;
+//			left = (left + right) / 2+1;
+//		if(k< arr[(left + right) / 2])
+//			right = (left + right) / 2-1  ;
+//		if(right==left)
+//			return left;
 //	}
-//	return left;
+//	return -1;
+//}
+//8.19
+//int binary_search(int arr[], int k, int right) //arr本质是指针
+//{
+//	int left = 0;
+//
+//	for (; right >= left ;) {
+//
+//		if (k > arr[(left + right) / 2])
+//			left = (left + right) / 2 + 1;
+//		if (k < arr[(left + right) / 2])
+//			right = (left + right) / 2 - 1;
+//		if (k == arr[(left + right) / 2])
+//			return (left + right) / 2;
+//	}
+//	return -1;
 //}
 //int main()
 //{
 //	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
-//	int k = 7;
+//	int k = 5;
 //	
-//	int ret=	binary_search(arr,k);
-//	if (ret = -1) {
+//	int right = sizeof(arr) / sizeof(arr[0]) - 1;
+//	int ret=	binary_search(arr,k,right);
+//	if (ret == -1) {
 //		printf("找不到");
 //	}
 //	else {
@@ -1522,3 +1541,41 @@
 //
 //	return 0;
 //}
+//void jia(int k,int* num) {
+//	(*num)++;
+//	
+//
+//}
+//int main() {
+//	int num = 0;
+//
+//	for (int i = 1; i < 10; i++) {
+//		int k = 0;
+//		scanf("%d", &k);
+//		
+//		jia(k,& num);
+//		printf("num=%d\n", num);
+//	}
+//	
+//	return 0;
+//}
+// 链式访问
+//int main()
+//{
+//	int len=1;
+//	printf("%d\n", strlen("asdf"));
+//	printf("%d", printf("%d", printf("%d", 43)));
+//	return 0;
+//}
+//函数声明
+#include"add.c*"
+int Add(int, int);
+int main()
+{
+	int a = 1;
+	int b = 32;
+	int sum = Add(a, b);
+	printf("%d", sum);
+
+	return 0;
+}
