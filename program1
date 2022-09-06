@@ -1568,14 +1568,87 @@
 //	return 0;
 //}
 //函数声明
-#include"add.c*"
-int Add(int, int);
-int main()
-{
-	int a = 1;
-	int b = 32;
-	int sum = Add(a, b);
-	printf("%d", sum);
+// 函数在  add1.h中声明  add1.c中定义
 
-	return 0;
-}
+//#include"add1.h" 
+//int Add1(int, int);
+//int main()
+//{
+//	int a = 1;
+//	int b = 4  ;
+//	int sum = Add1(a, b);
+//	printf("%d", sum);
+//
+//	return 0;
+//}
+//9.4
+//int main(){
+//
+//
+//	return 0;   
+//}
+
+//9.6
+//递归常见错误栈溢出
+//int main() {
+//
+//	printf("hehe\n");
+//	main();
+//	return 0;
+//}
+//
+//void print(int n) {
+//	if (n > 9) {
+//		print(n / 10);
+//}
+//	printf("%d ", n % 10);
+//}
+//int main() {
+//	unsigned int num = 0;
+//	scanf("%d", &num);
+//	print(num);
+//
+//	return 0;
+//}
+//int main() {
+//	char arr[] = "bit";
+//	int len = strlen(arr);
+//
+//	printf("%d", len);
+//
+//	return 0;
+//}
+//int my_strlen(char* str) {
+//	int count = 0;
+//	while (*str != '\0') {
+//		count++;
+//		str++;
+//	}
+//	return count;
+//}
+//int main() {
+//	char arr[] = "bit";
+//	int len =my_strlen(arr);
+//
+//	printf("%d", len);
+//
+//	return 0;
+//}
+//递归的方法
+//int my_strlen2(char* str) {
+//
+//	if(*str != '\0') {
+//		return 1+my_strlen2(str+1);
+//	}
+//	else
+//
+//	return 0;
+//}
+//int main() {
+//	char arr[] = "bit";
+//	int len = my_strlen2(arr);
+//
+//	printf("%d", len);
+//
+//	return 0;
+//}
