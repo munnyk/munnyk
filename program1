@@ -257,7 +257,7 @@
 //	return 0;
 //}
 
-//10.函数   //不知道为什么不行
+//10.函数   
 
 //int Add(int x, int y)
 //{
@@ -266,7 +266,7 @@
 //}
 //
 //
-//int mian() 
+//int main() 
 //
 //
 //{
@@ -1684,7 +1684,7 @@
 //	
 //}
 
-//int main() {
+//int main() {                         //p12
 //	int n = 0;
 //	int ret = 1;
 //	scanf("%d", &n);
@@ -1722,15 +1722,206 @@
 //		return c;
 //
 //}
-int main() {
-	//int arr[10] = { 1,2,3 };//不完全初始化
-	//char arr1[5] = { 'a',98 };
-	//char arr3[5] = "ab";
-	char arr4[] = "aasdef";
-	printf("%d\n", sizeof(arr4));//sizeof 计算arr4所占空间大小
-	printf("%d\n", strlen(arr4));//求字符串'\0'之前的字符串个数
-	//strlen只能求字符串长度-库函数
-	//sizeof计算变量数组类型的大小-操作符
-	return 0;
-}
-//1234
+//int main() {
+//	//int arr[10] = { 1,2,3 };//不完全初始化
+//	//char arr1[5] = { 'a',98 };
+//	//char arr3[5] = "ab";
+//	char arr4[] = "aasdef";
+//	printf("%d\n", sizeof(arr4));//sizeof 计算arr4所占空间大小
+//	printf("%d\n", strlen(arr4));//求字符串'\0'之前的字符串个数
+//	//strlen只能求字符串长度-库函数
+//	//sizeof计算变量数组类型的大小-操作符
+//	return 0;
+//}
+//int main() {
+//	char arr1[] = "abv";
+//	char arr2[] = { 'a','b','c' };
+//	printf("%d\n", sizeof(arr1));
+//	printf("%d\n", sizeof(arr2));
+//	printf("%d\n", strlen(arr1));
+//	printf("%d\n", strlen(arr2));
+//
+//	return 0;
+//}
+//int main() {
+//	char arr[] = "abcdef";
+//	printf("%c\n", arr[3]);
+//	for (int i = 0; i < (int)strlen(arr); i++)
+//		printf("%c", arr [i]);
+//	int arr2[] = { 1,2,3,4,5,6,7,8,9,0 };
+//	printf("\n%d\n", arr2[3]);
+//	for (int i = 0; i < sizeof(arr2)/sizeof(arr2[0]); i++) {
+//		printf("%d", arr2[i]);
+//	}
+//	return 0;
+//
+//}
+//int main() {
+//		int arr2[] = { 1,2,3,4,5,6,7,8,9,0 };
+//		for (int i = 0; i < sizeof(arr2) / sizeof(arr2[1]); i++)
+//		{
+//			printf("%p\n", &arr2[i]);
+//}
+//
+//	return 0;
+//}
+//int main() {
+//	int arr[][4] = { {1,2,3} ,{4,5} };
+////char ch[5][6]=
+//	int arr[][3] = { {1,2,3} ,{4,5} };//不能省略列
+//
+//
+//	return 0;
+//}
+//int main() {
+//	
+//	int arr1[3][4] = { {1,2,3,},{4,5} };
+//	for (int i = 0; i < 3; i++) {
+//		for (int j = 0; j < 4; j++) {
+//			printf("%d ", arr1[i][j]);
+//
+//		}
+//		printf("\n");
+//	}
+//
+//	for (int i = 0; i < 3; i++) {
+//		for (int j = 0; j < 4; j++) {
+//			printf("&arr1[%d][%d]=%p ", i, j ,& arr1[i][j]);
+//
+//		}
+//		printf("\n");
+//	}
+//
+//	return 0;
+//}
+//void bubble_sort(int arr[],int sz) { //冒泡函数 p14 30:00
+//	int i = 0;   //数组进行传参实际传arr首元素地址 int* arr
+//         //sizeof(arr)例外 &arr 整个数组地址
+//	for (i = 0; i < sz - 1; i++) {
+//		int flag = 1;
+//		for (int j = 0; j < sz-1-i; j++) {
+//			if (arr[j] > arr[j + 1]) {
+//				int tmp = arr[j];
+//				arr[j] = arr[j + 1];
+//				arr[j + 1] = tmp;
+//				flag = 0;
+//			}
+//		}
+//		printf("%d\n", i);
+//		if (flag == 1)
+//			break;
+//	}
+//}
+//int main() {
+//	int arr[] = { 9,8,7,4,5,6,1,2,3 };
+//	int i = 0;
+//	int sz = sizeof(arr) / sizeof(arr[1]);
+//	bubble_sort(arr,sz);
+//	for (i = 0; i < sz ; i++) {
+//		printf("%d ", arr[i]);
+//	}
+//
+//
+//	return 0;
+//}
+//void Board (char board[row][col], int row, int col) {
+//int main(){
+//	printf("********************\n");
+//	printf("***1.play  0.exit***\n");
+//	printf("********************\n");
+//	printf("请输入:");
+//	int a = 0;
+//	scanf("%d", &a);
+//
+//	switch (a) {
+//
+//	}
+//
+//
+//}
+// 
+//          //三子棋
+// 
+// 
+//#include"add1.h"
+//
+//void menu() {
+//		printf("\n\n********************\n");
+//	printf("***1.play  0.exit***\n");
+//	printf("********************\n");
+//
+//
+//}
+//void game() {
+//	char board[Row][Col] = { ' ' };
+//	InitBoard(board, Row, Col);
+//	DisplayBoard(board, Row, Col);
+//	char ret = 'c';
+//	while (1)
+//	{
+//
+//		playermove(board, Row, Col);
+//		DisplayBoard(board, Row, Col);
+//		ret = iswin(board, Row, Col);
+//		if (ret != 'c') {
+//
+//			break;
+//		}
+//		computermove(board, Row, Col);
+//		DisplayBoard(board, Row, Col);
+//		ret = iswin(board, Row, Col);
+//		if (ret != 'c') {
+//			break;
+//		}
+//
+//	}
+//	if (ret == '*') {
+//		printf("玩家赢");
+//
+//
+//	}
+//	if (ret == '#')
+//		printf("电脑赢");
+//	if (ret == 'q') {
+//		printf("棋盘满了平局");
+//	}
+//
+//	
+//	
+//	return 0;
+//}
+//void test() {
+//
+//	int input = 1;
+//	srand((unsigned int)time(NULL));
+//	do {
+//		menu();
+//		printf("\n请选择:");
+//		scanf("%d", &input);
+//		switch (input)
+//		{
+//		case 1:
+//			printf("三子棋\n\n\n");
+//			game();
+//		
+//			break;
+//		case 0:
+//			printf("退出\n");
+//			break;
+//		default:
+//			printf("输入错误请重试\n");
+//			break;
+//
+//		}
+//
+//	}
+//	while (input);
+//
+//
+//}
+//int main() {
+//
+//	test();
+//
+//	return 0;
+//}
